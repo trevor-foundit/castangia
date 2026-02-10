@@ -44,7 +44,7 @@ export default function Fabrics() {
                         Tactile<br />Emotion
                     </h1>
                     <p className="text-lg md:text-xl font-light tracking-wide max-w-2xl mx-auto opacity-80 leading-relaxed text-[#1A1A1A]">
-                        To touch is to understand. We source only the world's most precious fibres, transformed by Italian mills into fabrics that breathe, move, and endure.
+                        To touch is to understand. We source only the world&apos;s most precious fibres, transformed by Italian mills into fabrics that breathe, move, and endure.
                     </p>
                 </div>
             </section>

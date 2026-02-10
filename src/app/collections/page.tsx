@@ -129,7 +129,7 @@ export default function Collections() {
                         transition={{ duration: 1.5 }}
                         className="text-xl md:text-3xl font-serif font-light leading-relaxed text-white/60 italic"
                     >
-                        "We do not chase the market. To wear Castangia is to step outside of time."
+                        &quot;We do not chase the market. To wear Castangia is to step outside of time.&quot;
                     </motion.p>
                 </div>
 

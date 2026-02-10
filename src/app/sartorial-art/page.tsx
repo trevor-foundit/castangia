@@ -65,7 +65,7 @@ export default function SartorialArt() {
                             >
                                 <span className="text-[#D4AF37] text-xs tracking-[0.2em] uppercase block mb-4">01. The Architecture</span>
                                 <p className="text-2xl font-serif font-light leading-relaxed text-white/90 italic">
-                                    "The pattern is not a suggestion. It is a law."
+                                    &quot;The pattern is not a suggestion. It is a law.&quot;
                                 </p>
                             </motion.div>
                             <motion.div

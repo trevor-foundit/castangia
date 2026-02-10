@@ -84,7 +84,7 @@ export function CursorProvider({ children }: { children: React.ReactNode }) {
             height: 100,
             width: 100,
             backgroundColor: "#FDFCF8",
-            mixBlendMode: "difference" as any,
+            mixBlendMode: "difference" as const,
             color: "#000",
             x: "-50%",
             y: "-50%",

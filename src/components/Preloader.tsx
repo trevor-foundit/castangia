@@ -11,8 +11,8 @@ export function Preloader() {
         const hasLoaded = sessionStorage.getItem("castangia_loaded");
 
         if (hasLoaded) {
-            setIsLoading(false);
-            return;
+            const t = setTimeout(() => setIsLoading(false), 0);
+            return () => clearTimeout(t);
         }
 
         // Fake loading time for the experience

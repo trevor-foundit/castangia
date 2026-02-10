@@ -146,7 +146,7 @@ export function CinematicNarrative() {
                                 {/* SVG Signet */}
                                 <CastangiaSignet className="w-32 h-32 md:w-48 md:h-48 mb-4 opacity-80 group-hover:opacity-100 transition-opacity duration-700" />
                                 <span className="text-xl md:text-2xl font-serif text-white/0 group-hover:text-[#D4AF37] transition-colors duration-700 delay-100 transform translate-y-4 group-hover:translate-y-0 tracking-[0.2em] uppercase">
-                                    The Viceroy's Standard
+                                    The Viceroy&apos;s Standard
                                 </span>
                             </div>
                         </motion.div>
@@ -182,7 +182,10 @@ export function CinematicNarrative() {
                                 placeholder="Consult the Archive..."
                                 className="w-full bg-transparent text-lg font-serif text-white/90 placeholder:text-white/30 focus:outline-none focus:placeholder:text-white/10 transition-colors"
                             />
-                            <button className="ml-4 p-2 rounded-full hover:bg-white/10 transition-colors">
+                            <button
+                                type="button"
+                                className="ml-4 p-2 rounded-full hover:bg-white/10 transition-colors"
+                            >
                                 <ArrowRight className="w-5 h-5 text-white/50 hover:text-white" />
                             </button>
                         </motion.div>
@@ -196,5 +199,3 @@ export function CinematicNarrative() {
         </div>
     );
 }
-   
- 

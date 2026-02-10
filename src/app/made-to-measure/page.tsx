@@ -61,7 +61,7 @@ export default function MadeToMeasure() {
                             >
                                 <span className="text-[#D4AF37] text-xs tracking-[0.2em] uppercase block mb-4">The Protocol</span>
                                 <p className="text-lg leading-loose text-white/80 font-serif italic">
-                                    "We do not fit the garment to the body. We fit the garment to the life."
+                                    &quot;We do not fit the garment to the body. We fit the garment to the life.&quot;
                                 </p>
                             </motion.div>
                         </div>
