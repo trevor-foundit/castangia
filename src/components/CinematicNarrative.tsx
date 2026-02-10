@@ -191,7 +191,7 @@ export function CinematicNarrative() {
                         </motion.div>
                     </div>
                     <p className="text-center mt-3 text-[9px] uppercase tracking-[0.3em] text-white/20">
-                        Castangia 1850 • Neural Interface
+                        Castangia 1850 &bull; Neural Interface
                     </p>
                 </motion.div>
             </div>
