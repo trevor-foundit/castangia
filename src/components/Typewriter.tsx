@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { motion, useInView } from "framer-motion";
+import { useInView } from "framer-motion";
 
 interface TypewriterProps {
     text: string;

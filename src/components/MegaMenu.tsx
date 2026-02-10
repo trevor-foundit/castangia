@@ -2,7 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import { X, ArrowRight, Instagram, Facebook, Linkedin } from "lucide-react";
+import { X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 interface MegaMenuProps {

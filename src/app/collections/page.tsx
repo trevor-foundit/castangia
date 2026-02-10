@@ -88,7 +88,7 @@ export default function Collections() {
             <section className="relative z-20 pb-64 px-6 md:px-12">
                 <div className="max-w-[1600px] mx-auto flex flex-col">
 
-                    {collectionItems.map((item, index) => (
+                    {collectionItems.map((item) => (
                         <motion.div
                             key={item.id}
                             initial={{ opacity: 0, y: 50 }}
