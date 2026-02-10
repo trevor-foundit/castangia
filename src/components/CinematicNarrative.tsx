@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Typewriter } from "./Typewriter";
+import { CastangiaSignet } from "./CastangiaSignet";
 
 export function CinematicNarrative() {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -42,8 +43,8 @@ export function CinematicNarrative() {
                         style={{ opacity: scene1Opacity, y: scene1TextY }}
                         className="absolute inset-0 flex items-center justify-center pointer-events-none"
                     >
-                        <h2 className="text-[10vw] md:text-[8vw] font-serif leading-none tracking-tight text-center mix-blend-overlay opacity-80">
-                            The authority<br />of the cut.
+                        <h2 className="text-[10vw] md:text-[8vw] font-serif font-light leading-none tracking-tight text-center mix-blend-overlay opacity-90">
+                            The Spirit<br />of 1850.
                         </h2>
                     </motion.div>
                 </div>
@@ -141,9 +142,11 @@ export function CinematicNarrative() {
                                 className="w-full h-full object-cover opacity-60 group-hover:opacity-90 transition-opacity duration-1000"
                                 alt="Detail"
                             />
-                            <div className="absolute inset-0 flex items-center justify-center">
-                                <span className="text-3xl md:text-5xl font-serif text-white/0 group-hover:text-white/90 transition-colors duration-700 transform translate-y-4 group-hover:translate-y-0">
-                                    The Signet
+                            <div className="absolute inset-0 flex flex-col items-center justify-center">
+                                {/* SVG Signet */}
+                                <CastangiaSignet className="w-32 h-32 md:w-48 md:h-48 mb-4 opacity-80 group-hover:opacity-100 transition-opacity duration-700" />
+                                <span className="text-xl md:text-2xl font-serif text-white/0 group-hover:text-[#D4AF37] transition-colors duration-700 delay-100 transform translate-y-4 group-hover:translate-y-0 tracking-[0.2em] uppercase">
+                                    The Viceroy's Standard
                                 </span>
                             </div>
                         </motion.div>
