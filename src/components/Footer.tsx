@@ -72,7 +72,7 @@ export function Footer() {
 
                 {/* Bottom Section */}
                 <div className="pt-12 flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-cream/30 uppercase tracking-widest">
-                    <p>&copy; 2026 Castangia 1850. All Rights Reserved.</p>
+                    <p>&copy; 2026 Castangia 1850. All Rights Reserved. <span className="text-white/10 ml-2">v2.1</span></p>
                     <div className="flex gap-8">
                         <a href="#" className="hover:text-cream transition-colors">Instagram</a>
                         <a href="#" className="hover:text-cream transition-colors">LinkedIn</a>
