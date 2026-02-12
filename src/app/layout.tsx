@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import { CursorProvider } from "@/components/CastangiaCursor";
 import { Preloader } from "@/components/Preloader";
 import { AudioAmbience } from "@/components/AudioAmbience";
+import { FilmGrain } from "@/components/FilmGrain";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -34,6 +35,7 @@ export default function RootLayout({
         className={`${playfair.variable} ${inter.variable} antialiased bg-cream text-charcoal cursor-none`}
       >
         <SmoothScrolling>
+          <FilmGrain />
           <CursorProvider>
             <Preloader />
             <Navigation />

@@ -31,7 +31,7 @@ export default function Fabrics() {
             <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1605518216938-7c31b7b14ad0?q=80&w=2609&auto=format&fit=crop"
+                        src="/images/campaign/2026/IMG_3671.JPG"
                         alt="Fabric Texture"
                         className="w-full h-full object-cover"
                     />

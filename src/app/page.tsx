@@ -1,11 +1,11 @@
 import { Hero } from "@/components/Hero";
-import { CinematicNarrative } from "@/components/CinematicNarrative";
+import { NarrativeEngine } from "@/components/NarrativeEngine";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-[#151515]">
+    <main className="flex min-h-screen flex-col bg-[#F4F1EA]">
       <Hero />
-      <CinematicNarrative />
+      <NarrativeEngine />
     </main>
   );
 }

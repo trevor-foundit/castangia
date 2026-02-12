@@ -54,6 +54,7 @@ export function Footer() {
                                 <li><Link href="#" className="hover:text-navy transition-colors">Maintenance</Link></li>
                                 <li><Link href="#" className="hover:text-navy transition-colors">Gift Cards</Link></li>
                                 <li><Link href="#" className="hover:text-navy transition-colors">Contact Us</Link></li>
+                                <li><Link href="/dealer-portal" className="hover:text-navy transition-colors">Dealer Portal</Link></li>
                             </ul>
                         </div>
 

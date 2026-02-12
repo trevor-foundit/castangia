@@ -13,11 +13,6 @@ export function CinematicNarrative() {
         offset: ["start start", "end end"],
     });
 
-    // SCENE 1: THE MATERIAL (Parallax Fabric)
-    const scene1Opacity = useTransform(scrollYProgress, [0, 0.2, 0.25], [1, 1, 0]);
-    const scene1Scale = useTransform(scrollYProgress, [0, 0.25], [1, 1.05]);
-    const scene1TextY = useTransform(scrollYProgress, [0, 0.25], [0, 50]);
-
     // PARALLAX DRIFT SPEEDS (The Floating Feed)
     const driftFast = useTransform(scrollYProgress, [0, 1], [0, -100]);
     const driftSlow = useTransform(scrollYProgress, [0, 1], [0, -50]);
@@ -28,24 +23,34 @@ export function CinematicNarrative() {
             {/* 
                 SCENE 1: THE MATERIAL 
             */}
-            <div className="h-[120vh] relative z-10">
-                <div className="sticky top-0 h-screen overflow-hidden">
-                    <motion.div style={{ opacity: scene1Opacity, scale: scene1Scale }} className="absolute inset-0">
-                        <img
-                            src="/images/upload-5.jpg"
-                            alt="The Material"
-                            className="w-full h-full object-cover grayscale opacity-60"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#151515]/20 to-[#151515]"></div>
-                    </motion.div>
-
+            {/* 
+                SCENE 1: THE SILENT MANIFESTO 
+            */}
+            <div className="h-[100vh] relative z-10 flex items-center justify-center bg-[#0a0a0a]">
+                <div className="sticky top-0 h-screen flex flex-col items-center justify-center px-6">
                     <motion.div
-                        style={{ opacity: scene1Opacity, y: scene1TextY }}
-                        className="absolute inset-0 flex items-center justify-center pointer-events-none"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1.5, ease: "easeOut" }}
+                        className="text-center space-y-8"
                     >
-                        <h2 className="text-[10vw] md:text-[8vw] font-serif font-light leading-none tracking-tight text-center mix-blend-overlay opacity-90">
-                            The Spirit<br />of 1850.
+                        <p className="text-xs md:text-sm font-mono uppercase tracking-[0.4em] text-[#D4AF37]/60">
+                            Est. 1850
+                        </p>
+                        <h2 className="text-5xl md:text-8xl font-serif leading-tight text-[#FDFCF8] mix-blend-screen">
+                            The Authority<br />of the Cut.
                         </h2>
+                        <motion.div
+                            initial={{ width: 0 }}
+                            whileInView={{ width: "100px" }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.5, duration: 1 }}
+                            className="h-px bg-[#D4AF37] mx-auto mt-8"
+                        />
+                        <p className="text-lg md:text-xl font-light text-white/40 max-w-lg mx-auto leading-relaxed pt-8">
+                            We do not shout. We tailor.
+                        </p>
                     </motion.div>
                 </div>
             </div>
@@ -75,7 +80,7 @@ export function CinematicNarrative() {
                                 className="w-full aspect-[4/5] relative overflow-hidden group rounded-sm"
                             >
                                 <img
-                                    src="/images/upload-6.jpg"
+                                    src="/images/campaign/2026/IMG_3670.JPG"
                                     className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-1000 grayscale group-hover:grayscale-0"
                                     alt="The Portrait"
                                 />
@@ -93,7 +98,7 @@ export function CinematicNarrative() {
                                 className="w-full aspect-video relative overflow-hidden group rounded-sm mb-6"
                             >
                                 <img
-                                    src="/images/upload-7.jpg"
+                                    src="/images/campaign/2026/IMG_3672.JPG"
                                     className="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-1000"
                                     alt="The Atmosphere"
                                 />
@@ -138,7 +143,7 @@ export function CinematicNarrative() {
                             className="w-full max-w-4xl aspect-[21/9] relative overflow-hidden group rounded-sm"
                         >
                             <img
-                                src="/images/upload-3.jpg"
+                                src="/images/campaign/2026/IMG_3674.JPG"
                                 className="w-full h-full object-cover opacity-60 group-hover:opacity-90 transition-opacity duration-1000"
                                 alt="Detail"
                             />

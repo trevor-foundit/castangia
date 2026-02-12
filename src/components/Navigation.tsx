@@ -2,7 +2,7 @@
 
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { useState } from "react";
-import { Menu, ShoppingBag, User, Search } from "lucide-react";
+import { Menu } from "lucide-react";
 import Link from "next/link";
 import { MegaMenu } from "@/components/MegaMenu";
 
@@ -62,34 +62,19 @@ export function Navigation() {
                     </div>
 
                     {/* Right: Actions */}
-                    <div className={`flex items-center gap-6 ${scrolled ? "text-charcoal" : "text-cream mix-blend-difference"}`}>
-                        <Link href="/boutiques" className="hidden md:flex items-center gap-2 group">
-                            <span className="text-xs uppercase tracking-[0.2em] font-medium group-hover:underline underline-offset-4 decoration-current/30">
-                                Boutiques
-                            </span>
-                        </Link>
-                        <button className="hidden md:flex items-center gap-2 group">
-                            <span className="text-xs uppercase tracking-[0.2em] font-medium group-hover:underline underline-offset-4 decoration-current/30">
-                                Bespoke
-                            </span>
-                        </button>
-                        <div className="h-4 w-px bg-current/20 hidden md:block" />
-                        <button className="hover:opacity-60 transition-opacity">
-                            <Search strokeWidth={1} className="w-5 h-5" />
-                        </button>
-                        <button className="hover:opacity-60 transition-opacity">
-                            <User strokeWidth={1} className="w-5 h-5" />
-                        </button>
-                        <button className="hover:opacity-60 transition-opacity relative">
-                            <ShoppingBag strokeWidth={1} className="w-5 h-5" />
-                            <span className="absolute -top-1 -right-1 flex h-2 w-2">
-                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-navy opacity-75"></span>
-                                <span className="relative inline-flex rounded-full h-2 w-2 bg-navy"></span>
-                            </span>
-                        </button>
-                    </div>
-
+                    <Link href="/boutiques" className="hidden md:flex items-center gap-2 group">
+                        <span className="text-xs uppercase tracking-[0.2em] font-medium group-hover:underline underline-offset-4 decoration-current/30">
+                            Boutiques
+                        </span>
+                    </Link>
+                    <button className="hidden md:flex items-center gap-2 group">
+                        <span className="text-xs uppercase tracking-[0.2em] font-medium group-hover:underline underline-offset-4 decoration-current/30">
+                            Bespoke
+                        </span>
+                    </button>
+                    <div className="h-4 w-px bg-current/20 hidden md:block" />
                 </div>
+
             </motion.header>
         </>
     );

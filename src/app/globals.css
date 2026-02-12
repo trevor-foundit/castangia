@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-cream: #F5F5F0;
-  --color-charcoal: #151515;
+  --color-cream: #F4F1EA;
+  --color-charcoal: #2C2C2C;
+  --color-bronze: #8C7B6C;
   --color-navy: #0B1D38;
 
   --font-serif: var(--font-playfair);
